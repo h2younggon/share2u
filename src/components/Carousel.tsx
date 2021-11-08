@@ -30,9 +30,10 @@ function Carousel({gap, offset, pages, pageWidth}: CarouselProps) {
 
   const IndicatorWrapper = styled.View`
     flex-direction: row;
-    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 61px;
     justify-content: center;
-    margin-top: 16px;
   `;
 
   const Indicator = styled.View<{focused: boolean}>`
@@ -78,7 +79,6 @@ const Container = styled.View`
 const Content = styled.FlatList`
   width: 100%;
   height: 100%;
-  border-radius: 3px;
 `;
 
 export default Carousel;

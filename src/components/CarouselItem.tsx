@@ -11,7 +11,6 @@ const Item = styled.View<{color: string}>`
   background-color: ${props => props.color};
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
 `;
 
 function CarouselItem({item, style}: CarouselItemProps) {
